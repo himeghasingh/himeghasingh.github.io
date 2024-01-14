@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import TypingText from './TypingText';
 import HeroImage from '../assets/heroImage.jpg'
 import { LuHardDriveDownload } from "react-icons/lu";
@@ -19,17 +19,30 @@ const About = () => {
     const handleDownload = () => {
         window.location.href = ResumePDF;
     };
+
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+    const timerId = setTimeout(() => {
+      setIsLoaded(true);
+    }, 100);
+    
+
+    return () => clearTimeout(timerId);
+  }, []);
+
+  console.log(isLoaded)
   return (
-    <div name="home" className="h-screen w-full bg-gradient-to-b from-gray-400 to-white">
+    <div name="home" className={`h-screen w-full bg-gradient-to-b from-gray-400 to-white transition-opacity`}>
         <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-1 md:flex-row">
             <div className="flex flex-col justify-center md:text-right">
                 <TypingText />
                 <p className="py-2 whitespace-nowrap font-secondary font-semibold my-10">MS CS @ UMass Amherst<br></br>Actively seeking Summer 2024 SWE Internships<br></br>Ex - Member of Technical Staff @ VMware<br></br> Loves talking about Cloud Computing, Virtualization and Green Cloud</p>
                 <div className="flex justify-center">
-                <a className="text-white w-fit px-4 py-3 my-2 flex items-center bg-black font-secondary font-bold mx-4 hover:bg-white hover:text-black transition duration-500" href={ResumePDF} download="MeghaSingh_Resume.pdf">RESUME  
+                <a className="text-white w-fit px-4 py-3 my-2 flex items-center bg-black font-secondary font-bold mx-4 hover:bg-white hover:text-black transition duration-500 cursor-pointer" href={ResumePDF} download="MeghaSingh_Resume.pdf">RESUME  
                         <span className="ml-2"><LuHardDriveDownload /></span>
                     </a>
-                    <button className="text-white w-fit px-4 py-3 my-2 flex items-center bg-black font-secondary font-bold mx-4 hover:bg-white hover:text-black transition duration-500">HIRE ME?
+                    <button className="text-white w-fit px-4 py-3 my-2 flex items-center bg-black font-secondary font-bold mx-4 hover:bg-white hover:text-black transition duration-500 cursor-pointer">HIRE ME?
                     </button>
                 </div>
             </div>
