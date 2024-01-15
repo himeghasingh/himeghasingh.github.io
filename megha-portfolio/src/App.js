@@ -3,6 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import About from './components/About';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+
 // Import other components as needed
 
 function App() {
@@ -22,7 +26,9 @@ function App() {
         <Routes>
         <Route path="/" element={ <Home />} />
         <Route path="/about" element={ <About />} />
-        {/* Add more routes for other components as needed */}
+        <Route path="/education" element={ <Education />} />
+        <Route path="/experience" element={ <Experience />} />
+        <Route path="/projects" element={ <Projects />} />
       </Routes>
     </div>
   );
