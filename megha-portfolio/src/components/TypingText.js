@@ -16,7 +16,7 @@ const TypingText = () => {
 
       const elapsed = timestamp - animationFrameId;
 
-      if (elapsed > 100) { // Adjust the typing speed here (50 milliseconds in this example)
+      if (elapsed > 200) { // Adjust the typing speed here (50 milliseconds in this example)
         setText(fullText.substring(0, index));
         index++;
 
@@ -36,7 +36,7 @@ const TypingText = () => {
   }, []);
 
   return (
-    <h3 className="text-md sm:text-4xl font-bold text-white">{text}</h3>
+    <h3 className="my-5 text-md sm:text-4xl font-bold text-white">{text}</h3>
   );
 };
 

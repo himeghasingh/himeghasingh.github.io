@@ -22,10 +22,10 @@ const NavBar = () => {
             id : 4,
             link : 'PROJECTS'
         },
-        {
-            id : 5,
-            link : 'CONTACT'
-        },
+        // {
+        //     id : 5,
+        //     link : 'CONTACT'
+        // },
     ]
 
     return (
