@@ -1,6 +1,8 @@
 import React from 'react';
+import umassLogoUrl from '../assets/umassLogo.png';
+import vitLogo from '../assets/vitLogo.png';
 
-
+const vitLogoUrl = 'https://example.com/vit-logo.png';
 const Education = () => {
   return (
       <div className = "w-full bg-gradient-to-b from-gray-400  to-white transition-opacity">
@@ -9,13 +11,25 @@ const Education = () => {
         EDUCATION
       </div>
       <ul>
-        <li className="text-gray-600 font-semibold text-2xl">Master's</li>
-        <p className="text-md sm:text-xl font-bold text-slate-800 flex justify-between">University of Massachusetts Amherst</p>
-        <p className='text-xs'>Amherst, MA, USA</p>
+        <li className="text-gray-600 font-semibold text-2xl mt-2">Master's</li>
+        <div className="w-30 h-1 bg-gradient-to-r from-gray-500 to-gray-100 mt-6 mb-6"></div>
+        <div className="flex items-center">
+  <div className="text-md sm:text-xl font-semibold text-slate-800 mr-2">
+  <a href="https://www.umass.edu/" target="_blank" rel="noopener noreferrer" className="hover:text-white cursor-pointer">
+      University of Massachusetts Amherst
+    </a>
+    <p className="text-xs">Amherst, MA, USA</p>
+  </div>
+  <img src={umassLogoUrl} alt="UMass Logo" className="h-20 w-20" style={{ marginLeft: '20' }} />
+</div>
+
+
+
+        
         <p className='mt-5 font-medium'>Master's of Science - Computer Science</p>
         <p className="text-xs">Sep 2023 - May 2025 (Expected Graduation)</p>
         <p className='font-semibold'>GPA : 4.0/4.0 </p>
-        <p> Courses : </p>
+        <p className='mt-5'> Courses : </p>
         <ul className="ml-4">
           <li>Fall 2023</li>
           <ul className="ml-8 font-secondary list-disc text-sm">
@@ -30,13 +44,22 @@ const Education = () => {
             <li>Business Intelligence and Analytics</li>
           </ul>
         </ul>
-        <li className="text-gray-600 font-semibold text-2xl mt-5">Bachelor's</li>
-        <p className="text-md sm:text-xl font-bold text-slate-800">VIT University</p>
-        <p className='text-xs'>Vellore, TN, India</p>
-        <p className='mt-5 font-medium'>Bachelor of Technology - Electronics and Communication</p>
+
+        <li className="text-gray-600 font-semibold text-2xl mt-10">Bachelor's</li>
+        <div className="w-30 h-1 bg-gradient-to-r from-gray-500 to-white mt-6 mb-6"></div>
+        <div className="flex items-center">
+  <div className="text-md sm:text-xl font-semibold text-slate-800 mr-2">
+  <a href="https://www.vit.ac.in/" target="_blank" rel="noopener noreferrer">
+      VIT University
+    </a>
+    <p className="text-xs">Vellore, TN, India</p>
+  </div>
+  <img src={vitLogo} alt="UMass Logo" className="h-20 w-20" style={{ marginLeft: '10' }} />
+</div>
+        <p className='mt-5 font-medium'>Bachelor's of Technology - Electronics and Communication</p>
         <p className="text-xs">Jul 2014 -Apr2018</p>
         <p className='font-semibold'>GPA : 3.57/4.0 </p>
-        <p> Relevant Courses : </p>
+        <p className='mt-5'> Relevant Courses : </p>
         <ul className="ml-8 font-secondary list-disc text-sm">
           <li>Data Structures and Algorithms</li>
           <li>Computer Programming and Problem Solving</li>  

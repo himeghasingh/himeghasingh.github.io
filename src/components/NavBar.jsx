@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import {FaBars, FaTimes} from "react-icons/fa";
 import { Link, useLocation } from 'react-router-dom';
 
@@ -33,8 +33,19 @@ const NavBar = () => {
         //     link : 'CONTACT'
         // },
     ]
+    const [isNavBarLoaded, setIsNavBarLoaded] = useState(false);
+
+  useEffect(() => {
+    // Simulate loading delay (replace with actual loading logic if needed)
+    setTimeout(() => {
+      setIsNavBarLoaded(true);
+    }, 1000); // 1000 milliseconds = 1 second
+  }, []);
+
 
     return (
+        <div className={`w-full transition-opacity duration-1000 ease-in-out transform ${isNavBarLoaded ? 'opacity-100' : 'opacity-0'}`}>
+
     <div className=" flex fixed justify-between items-center w-full h-20 px-4 text-white bg-black top-0 left-0 z-50">
         <div>
             <Link to="/">
@@ -64,6 +75,7 @@ const NavBar = () => {
             ))}
         </ul>
         )}
+    </div>
     </div>
   )
 }
