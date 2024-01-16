@@ -35,7 +35,7 @@ const NavBar = () => {
     ]
 
     return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className=" flex fixed justify-between items-center w-full h-20 px-4 text-white bg-black top-0 left-0 z-50">
         <div>
             <Link to="/">
             <h1 className="font-bold font-secondary ml-2 hover:scale-105 duration-200 cursor-pointer">HOME</h1>

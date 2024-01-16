@@ -1,35 +1,32 @@
+// App.jsx
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
-import About from './components/About';
 import Education from './components/Education';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-
-// Import other components as needed
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const timerId = setTimeout(() => {
+    // Simulate loading delay (replace with actual loading logic if needed)
+    setTimeout(() => {
       setIsLoaded(true);
-    }, 1000);
-
-    return () => clearTimeout(timerId);
+    }, 1000); // 1000 milliseconds = 1 second
   }, []);
 
   return (
-    <div className={`transition-opacity duration-1000 ease-in-out transform ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+    <div>
+      <div className="fixed top-0 left-0 w-full h-20 px-4 text-white bg-black z-50">
         <NavBar />
+      </div>
+      <div className={`fade-in-container transition-opacity duration-1000 ease-in-out transform ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <Routes>
-        <Route path="/" element={ <Home />} />
-        <Route path="/about" element={ <About />} />
-        <Route path="/education" element={ <Education />} />
-        <Route path="/experience" element={ <Experience />} />
-        <Route path="/projects" element={ <Projects />} />
-      </Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/education" element={<Education />} />
+          {/* Add other routes/components here */}
+        </Routes>
+      </div>
     </div>
   );
 }
