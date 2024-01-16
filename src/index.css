@@ -10,4 +10,17 @@
   html {
     font-family: 'Montserrat', sans-serif;
   }
+  @keyframes drawLine {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .custom-animation {
+    animation: drawLine 2s ease-out; /* Adjust the duration as needed */
+  }
+  
 }
