@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Education from './components/Education';
+import Experience from './components/Experience';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/experience" element={<Experience />} />
           {/* Add other routes/components here */}
         </Routes>
       </div>
