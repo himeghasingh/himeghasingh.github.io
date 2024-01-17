@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f018a00c.css",
-    "main.js": "/static/js/main.87b24a22.js",
+    "main.css": "/static/css/main.e72be146.css",
+    "main.js": "/static/js/main.43e5d4ab.js",
     "static/media/heroImage.png": "/static/media/heroImage.6573292b789139a16d71.png",
     "static/media/MeghaSingh_Resume.pdf": "/static/media/MeghaSingh_Resume.b227dbfa0cc9910580a5.pdf",
     "static/media/umassLogo.png": "/static/media/umassLogo.a076693e7f49aba1957c.png",
     "static/media/vitLogo.png": "/static/media/vitLogo.7034e095bf5c5dfe6eed.png",
     "static/media/handWave.png": "/static/media/handWave.f4ecd01132a71a9ae3fd.png",
+    "static/media/espressifLogo.png": "/static/media/espressifLogo.65df5d43f00f40379a92.png",
+    "static/media/vmwareLogo.png": "/static/media/vmwareLogo.496cde8310d4ec8485e6.png",
+    "static/media/jciLogo.png": "/static/media/jciLogo.e74570305a2ac61dfb8f.png",
     "index.html": "/index.html",
-    "main.f018a00c.css.map": "/static/css/main.f018a00c.css.map",
-    "main.87b24a22.js.map": "/static/js/main.87b24a22.js.map"
+    "main.e72be146.css.map": "/static/css/main.e72be146.css.map",
+    "main.43e5d4ab.js.map": "/static/js/main.43e5d4ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.f018a00c.css",
-    "static/js/main.87b24a22.js"
+    "static/css/main.e72be146.css",
+    "static/js/main.43e5d4ab.js"
   ]
 }
