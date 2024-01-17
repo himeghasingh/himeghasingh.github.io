@@ -28,6 +28,28 @@ const Experience = () => {
           <div className="w-500 h-1 bg-gradient-to-r from-gray-500 to-gray-100 mt-6 mb-6 custom-animation"></div>
           <p className='mt-5 font-medium'>Member of Technical Staff - 2</p>
           <p className="text-xs font-semibold">Aug 2020 - Jul 2023</p>
+          <div className='flex flex-row mt-2'>
+          <div className="border border-black px-2 rounded-xl bg-gray-500 pb-1 shadow-md mr-2">
+            <span className="text-white text-xs ">Java</span>
+          </div>
+          <div className="border border-black px-2 rounded-xl bg-gray-500 pb-1 shadow-md mr-2">
+            <span className="text-white text-xs ">Python</span>
+          </div>
+          <div className="border border-black px-2 rounded-xl bg-gray-500 pb-1 shadow-md mr-2">
+            <span className="text-white text-xs ">Linux</span>
+          </div>
+          <div className="border border-black px-2 rounded-xl  bg-gray-500 pb-1 shadow-md mr-2">
+            <span className="text-white text-xs ">CI/CD</span>
+          </div>
+          <div className="border border-black px-2 rounded-xl bg-gray-500 pb-1 shadow-md mr-2">
+            <span className="text-white text-xs ">Distributed Systems</span>
+          </div><div className="border border-black px-2 rounded-xl  bg-gray-500 pb-1 shadow-md mr-2">
+            <span className="text-white text-xs ">Virtualization</span>
+          </div>
+          <div className="border border-black px-2 rounded-xl  bg-gray-500 pb-1 shadow-md mr-2">
+            <span className="text-white text-xs ">Ruby</span>
+          </div>
+          </div>
           <ul className="ml-8 font-secondary list-disc text-sm mt-5">
           <li>Created scalable microservices enabling Multi-Cloud Architecture and Virtualization.</li>
           <li>Designed and Implemented APIs for Non-Disruptive VM Upgrade, reducing vCenter software upgrade downtime from several hours to 5 minutes, ≈ 1500%.</li>
