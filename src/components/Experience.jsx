@@ -218,6 +218,7 @@ const Experience = () => {
               )}
             </div>
           </div>
+          {/* jci full time */}
            {jc_ft_isTextVisible && (
             <div className={`transition-height overflow-hidden ${jc_ft_isTextVisible ? 'h-auto' : 'h-0'}`}>
               <ul className="ml-8 font-secondary list-disc text-sm mt-5">
