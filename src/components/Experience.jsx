@@ -227,7 +227,7 @@ const Experience = () => {
                 <li>Contributed to the development of iOtega home security system panel from Tyco Security Products, and automated end-to-end test workflows, using JAVA Spring Boot and Python.</li>
               </ul> </div>)} 
             </li>
-            {/* jci intern */}
+            {/* jci internship */}
             <li><p className='mt-5 font-medium'>Intern</p>
               <p className="text-xs font-semibold">Jan 2018 - Jun 2018</p>
               <div className="flex flex-row mt-2 ">
